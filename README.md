@@ -1,21 +1,21 @@
-# 2captcha
+# captcha2
 * This project is a folk from Mirio/captcha2upload
 * Fix so that it can work with Python3
 
-# 2Captcha
+# captcha2
 2Captcha team solves your CAPTCHA with high accuracy
 
 ## How to install?
 
 ### pip
 ```
-pip install 2captcha
+pip install captcha2
 ```
 
 ### Source
 ```
-git clone https://github.com/nikoladang/2captcha.git
-cd 2captcha
+git clone https://github.com/nikoladang/captcha2.git
+cd captcha2
 python setup.py install
 ```
 
@@ -30,7 +30,7 @@ And get the api key:
 
 ## Solve Captcha
 ```
-from 2captcha import CaptchaUpload
+from captcha2 import CaptchaUpload
 
 captcha = CaptchaUpload(<YOURKEY>)
 print captcha.solve(<PATHFILE>)
@@ -38,7 +38,7 @@ print captcha.solve(<PATHFILE>)
 
 ## Get balance
 ```
-from 2captcha import CaptchaUpload
+from captcha2 import CaptchaUpload
 
 captcha = CaptchaUpload(<YOURKEY>)
 print captcha.getbalance()
@@ -46,7 +46,7 @@ print captcha.getbalance()
 
 ## Attach the logs
 ```
-from 2captcha import CaptchaUpload
+from captcha2 import CaptchaUpload
 
 captcha = CaptchaUpload(<YOURKEY>, log=<YOURLOGVAR>)
 print captcha.getbalance()
@@ -54,7 +54,7 @@ print captcha.getbalance()
 
 ## Change Wait Time
 ```
-from 2captcha import CaptchaUpload
+from captcha2 import CaptchaUpload
 
 captcha = CaptchaUpload(<YOURKEY>, waittime=<YOURLOGVAR>)
 print captcha.solve(<PATHFILE>)
