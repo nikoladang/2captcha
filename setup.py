@@ -3,7 +3,7 @@
 	#$python setup.py sdist upload -r pypitest
 	#$python setup.py register -r pypi
 	#$python setup.py sdist upload -r pypi
-	#$python setup.py register -r pypitest && python setup.py sdist upload -r pypitest && python setup.py register -r pypi && python setup.py sdist upload -r pypi && pip install 2captcha --upgrade
+	#$python setup.py register -r pypitest && python setup.py sdist upload -r pypitest && python setup.py register -r pypi && python setup.py sdist upload -r pypi && pip install captcha2 --upgrade
 ##https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/
 
 from setuptools import setup, find_packages
@@ -32,8 +32,8 @@ from distutils.core import setup
 
 if __name__ == "__main__":
     setup(
-      name = '2captcha',
-      packages = ['2captcha'], # this must be the same as the name above
+      name = 'captcha2',
+      packages = ['captcha2'], # this must be the same as the name above
       version = '0.0.1',
       description = 'An upload to 2captcha.com library',
       author = 'Nikola Dang',
